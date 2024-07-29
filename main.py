@@ -22,4 +22,6 @@ phone_input = st.text_input("Enter phone number",max_chars=10 )
 is_phone_number_valid = validate_inputs.validate_phone_number(phone_input)
 
 if is_phone_number_valid:
-    pass
+    st.button("Submit")
+else:
+    st.warning("Enter correct number!")

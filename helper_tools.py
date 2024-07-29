@@ -16,8 +16,8 @@ class validate_inputs(object):
     def __init__(self, input_text):
         self.input_text = input_text
 
-    def validate_phone_number(self):
-        if str(self.input_text).isdigit() and bool(re.search("^[6-9]\d{9}$",self.input_text)):
+    def validate_phone_number(input_text):
+        if str(input_text).isdigit() and bool(re.search("^[6-9]\d{9}$",input_text)):
             return True
         else:
             return False
